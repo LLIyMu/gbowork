@@ -64,6 +64,9 @@
         </style>
     </head>
     <body>
+    @php
+        $var = true; echo isset($var)?1:0;
+    @endphp
         <div class="flex-center position-ref full-height">
             @if (Route::has('login'))
                 <div class="top-right links">
