@@ -62,7 +62,7 @@ class Post extends Model
         $filename = Str::random(10) . '.' . $image->extension();
 
         //сохраняю картинку в папку uploads
-        $image->saveAs('uploads', $filename);
+        $image->saveAs('uploads/', $filename);
 
         //записываю полученное значение в поле image и сохраняю в БД
         $this->image = $filename;
